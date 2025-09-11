@@ -6,13 +6,32 @@
 		{
 			"label" : "Run GTK-wave",
 			"type": "shell",
-			"command": "gtkwave.exe",
+			"command": "~/GTKWave.app/Contents/MacOS/bin/gtkwave",
 			"args": [
-				".\\out\\*.vcd"
+				"./out/*.vcd"
 			],
 			"options": {
 			  "cwd": "${workspaceFolder}"
+			}
+		},
+		{
+			"label": "Compile chip_7458_tb",
+			"type": "shell",
+			"command": "iverilog",
+			"args": [
+				"-Y.sv",
+				"-y.",
+				"-g2005-sv",
+				"-o",
+				"build/chip_7458_tb.v.out",
+				"chip_7458.v",
+				"chip_7458_tb.v"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
 			},
+			"problemMatcher": []
 		}
 	]
 }
