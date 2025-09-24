@@ -28,6 +28,6 @@ module full_add_3b(
         .cout(cout[2])
     );
 
-    assign cout = cout;
+    //assign cout = cout;
     
 endmodule

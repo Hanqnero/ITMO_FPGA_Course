@@ -1,3 +1,14 @@
+module d_trigger (
+    input wire clk,
+    input wire d,
+    output reg q
+);
+always @(posedge clk) begin
+    q<=d;
+end
+
+endmodule
+
 module part_1_top_module (input clk, input d, output q );
     
     wire t1_out, t2_out;
