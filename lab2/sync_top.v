@@ -13,7 +13,7 @@ reg [1:0]sync;
 always @(posedge clk)
    sync <= { sync[0], signal };
 
-wire signal_sync;
+
 assign signal_sync = sync[1];
 <<<<<<< HEAD
 =======

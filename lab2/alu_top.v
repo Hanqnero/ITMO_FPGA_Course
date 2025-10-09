@@ -11,6 +11,9 @@ module alu_top (
 <<<<<<< HEAD
 );
 
+// 1000_0000 
+// 1111_0000
+
 always @(*) begin
     result_o = 32'b0;
     flag_o = 1'b0;

@@ -15,8 +15,9 @@ module ram_top #(parameter N = 6, M = 32)
     assign dout = adr == 0 ? 0 : mem[adr];
     
     always @(posedge clk)
-        if (we) mem [adr] <= din;
+        if (we && adr != 0) mem [adr] <= din;
         
+<<<<<<< HEAD
 =======
 module ram_top(
 );
@@ -33,4 +34,6 @@ module ram_top(
         
 >>>>>>> 57ea532 (review 3 labs, sync fork with upstream)
 
+=======
+>>>>>>> a84bbea (lab2 with feedback)
 endmodule
