@@ -74,10 +74,17 @@ module full_add_3b_tb;
 		if ((sum ^ sum_compare) || (carry_out ^ carry_out_compare)) begin
 			isErr = 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			time_of_err = time_of_err == 0 ? $time : time_of_err;
 =======
 			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
 >>>>>>> 0903dde (review 3 labs)
+=======
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
+=======
+			time_of_err = time_of_err == 0 ? $time : time_of_err;
+>>>>>>> 702f703 (review 3 labs)
+>>>>>>> 57ea532 (review 3 labs, sync fork with upstream)
 		end
 	end
 
