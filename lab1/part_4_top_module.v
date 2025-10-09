@@ -1,5 +1,6 @@
 module part_4_top_module (input [31:0]a, input [31:0]b, input cin, output [31:0] sum, output cout);
 
+<<<<<<< HEAD
     wire c1;
     add16 a1(
         .a(a[15:0]), .b(b[15:0]), .cin(1'b0),
@@ -31,3 +32,8 @@ module part_4_top_module (input [31:0]a, input [31:0]b, input cin, output [31:0]
 
 
 endmodule
+=======
+    // write code here
+
+endmodule
+>>>>>>> 0903dde (review 3 labs)
