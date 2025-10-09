@@ -6,11 +6,7 @@ module full_add_3b_tb;
 	reg carry = 0;
 	wire [2:0] sum, carry_out;
 
-<<<<<<< HEAD
 	reg[15:0] time_of_err = 0;
-=======
-	reg[15:0] time_of_err = 16'bx;
->>>>>>> 0903dde (review 3 labs)
 	wire mismatch;
 
 	reg[2:0] sum_compare = 0, carry_out_compare = 0;
@@ -52,39 +48,12 @@ module full_add_3b_tb;
 	
 	end
 
-<<<<<<< HEAD
-=======
-	always @(*) begin
-		if (sum === 3'bz) begin
-			isErr = 1;
-			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
-			$display("p1y is in high-impedance (Z) state at t=%d", $time);
-		end
-		if (sum === 3'bx) begin
-			isErr = 1;
-			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
-			$display("p1y is in unknown (X) state at t=%d", $time);
-		end
-	end
-
->>>>>>> 0903dde (review 3 labs)
 
 	always @ (posedge mismatch) begin
 		#0.1; // Для иммитации синхронизатора, учитывая что провода передают сигнал почти без задержек, в отличии от регистров
 		if ((sum ^ sum_compare) || (carry_out ^ carry_out_compare)) begin
 			isErr = 1;
-<<<<<<< HEAD
-<<<<<<< HEAD
 			time_of_err = time_of_err == 0 ? $time : time_of_err;
-=======
-			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
->>>>>>> 0903dde (review 3 labs)
-=======
-			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
-=======
-			time_of_err = time_of_err == 0 ? $time : time_of_err;
->>>>>>> 702f703 (review 3 labs)
->>>>>>> 57ea532 (review 3 labs, sync fork with upstream)
 		end
 	end
 

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 57ea532 (review 3 labs, sync fork with upstream)
 module file_reg_top (
     input wire clk,                    
     input wire we,                     
@@ -11,7 +7,6 @@ module file_reg_top (
     input wire [4:0] raddr2,          
     output wire [31:0] rdata1,        
     output wire [31:0] rdata2         
-<<<<<<< HEAD
 );
 
     // Массив регистров: 32 регистра по 32 бита
@@ -24,25 +19,6 @@ module file_reg_top (
     // Асинхронное чтение с возвратом 0 для адреса 0
     assign rdata1 = (raddr1 == 5'b0) ? 32'h0 : registers[raddr1];
     assign rdata2 = (raddr2 == 5'b0) ? 32'h0 : registers[raddr2];
-=======
-module file_reg_top (       
-);
-
->>>>>>> 0903dde (review 3 labs)
-=======
-);
-
-    // Массив регистров: 32 регистра по 32 бита
-    reg [31:0] registers [0:31];
-
-    // Синхронная запись
-    always @(posedge clk)
-        if (we) registers[waddr] <= wdata;
-
-    // Асинхронное чтение с возвратом 0 для адреса 0
-    assign rdata1 = (raddr1 == 5'b0) ? 32'h0 : registers[raddr1];
-    assign rdata2 = (raddr2 == 5'b0) ? 32'h0 : registers[raddr2];
->>>>>>> 57ea532 (review 3 labs, sync fork with upstream)
         
 
 endmodule
