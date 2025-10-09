@@ -1,4 +1,5 @@
 module part_1_top_module (input clk, input d, output q );
+<<<<<<< HEAD
     
     wire t1_out, t2_out;
 
@@ -20,5 +21,10 @@ module part_1_top_module (input clk, input d, output q );
         .d(t2_out),
         .q(q)
     );
+=======
+
+    // write code here
+
+>>>>>>> 0903dde (review 3 labs)
 
 endmodule

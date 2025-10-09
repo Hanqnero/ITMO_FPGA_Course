@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 module d_trigger8(
         input clk, 
         input [7:0] d,
@@ -50,5 +51,10 @@ module part_2_top_module (
             2'b11: res = t3_out;
         endcase
     end
+=======
+module part_2_top_module (input [7:0]d, input [1:0]sel, input clk, output reg [7:0]q);
+
+    // write code here
+>>>>>>> 0903dde (review 3 labs)
 
 endmodule

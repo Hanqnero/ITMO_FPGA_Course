@@ -4,7 +4,11 @@ module part_4_top_tb;
 	reg [31:0]a = 0,b = 0;
 	wire [31:0]sum;
 
+<<<<<<< HEAD
 	reg[15:0] time_of_err = 0;
+=======
+	reg[15:0] time_of_err = 16'bx;
+>>>>>>> 0903dde (review 3 labs)
 	wire mismatch;
 
 	reg[31:0] sum_compare = 0;
@@ -37,11 +41,32 @@ module part_4_top_tb;
 	
 	end
 
+<<<<<<< HEAD
 		always @ (posedge mismatch) begin
 		#0.1
 		if (sum != sum_compare) begin
 			isErr = 1;
 			time_of_err = time_of_err == 0 ? $time : time_of_err;
+=======
+	always @(*) begin
+		if (sum === 32'bz) begin
+			isErr = 1;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
+			$display("p1y is in high-impedance (Z) state at t=%d", $time);
+		end
+		if (sum === 32'bx) begin
+			isErr = 1;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
+			$display("p1y is in unknown (X) state at t=%d", $time);
+		end
+	end
+
+	always @ (posedge mismatch) begin
+		#0.1
+		if (sum != sum_compare) begin
+			isErr = 1;
+			time_of_err = time_of_err === 16'bx ? $time : time_of_err;
+>>>>>>> 0903dde (review 3 labs)
 		end
 	end
 

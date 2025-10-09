@@ -1,4 +1,5 @@
 module lut_top (
+<<<<<<< HEAD
     input clk,
     input enable,
     input S,
@@ -15,4 +16,10 @@ module lut_top (
         if (enable) Q <= {Q[6:0], S};
        
     end
+=======
+
+);
+    
+
+>>>>>>> 0903dde (review 3 labs)
 endmodule

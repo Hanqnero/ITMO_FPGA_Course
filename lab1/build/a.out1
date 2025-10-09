@@ -1,0 +1,54 @@
+**** module/scope: nbit_add
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nbit_add.genblk1[0]
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nbit_add.genblk1[0].a
+     Flip-Flops   : 0
+     Logic Gates  : 7
+**** module/scope: nbit_add.genblk1[1]
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nbit_add.genblk1[1].a
+     Flip-Flops   : 0
+     Logic Gates  : 7
+**** module/scope: nbit_add.genblk1[2]
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nbit_add.genblk1[2].a
+     Flip-Flops   : 0
+     Logic Gates  : 7
+**** module/scope: nbit_add.genblk1[3]
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nbit_add.genblk1[3].a
+     Flip-Flops   : 0
+     Logic Gates  : 7
+**** module/scope: nbit_add.genblk1[4]
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nbit_add.genblk1[4].a
+     Flip-Flops   : 0
+     Logic Gates  : 7
+**** module/scope: nbit_add.genblk1[5]
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nbit_add.genblk1[5].a
+     Flip-Flops   : 0
+     Logic Gates  : 7
+**** module/scope: nbit_add.genblk1[6]
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nbit_add.genblk1[6].a
+     Flip-Flops   : 0
+     Logic Gates  : 7
+**** module/scope: nbit_add.genblk1[7]
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: nbit_add.genblk1[7].a
+     Flip-Flops   : 0
+     Logic Gates  : 7
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 56

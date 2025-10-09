@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module ram_top #(parameter N = 6, M = 32)
     (input clk,
     input we,
@@ -12,5 +13,10 @@ module ram_top #(parameter N = 6, M = 32)
     always @(posedge clk)
         if (we) mem [adr] <= din;
         
+=======
+module ram_top(
+);
+    
+>>>>>>> 0903dde (review 3 labs)
 
 endmodule

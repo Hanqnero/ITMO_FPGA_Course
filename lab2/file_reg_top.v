@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module file_reg_top (
     input wire clk,                    
     input wire we,                     
@@ -19,6 +20,11 @@ module file_reg_top (
     // Асинхронное чтение с возвратом 0 для адреса 0
     assign rdata1 = (raddr1 == 5'b0) ? 32'h0 : registers[raddr1];
     assign rdata2 = (raddr2 == 5'b0) ? 32'h0 : registers[raddr2];
+=======
+module file_reg_top (       
+);
+
+>>>>>>> 0903dde (review 3 labs)
         
 
 endmodule

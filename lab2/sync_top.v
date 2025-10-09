@@ -1,4 +1,5 @@
 module sync_top(
+<<<<<<< HEAD
     input clk,
     input signal,
     output signal_sync
@@ -11,5 +12,9 @@ always @(posedge clk)
 
 wire signal_sync;
 assign signal_sync = sync[1];
+=======
+);
+    
+>>>>>>> 0903dde (review 3 labs)
 
 endmodule

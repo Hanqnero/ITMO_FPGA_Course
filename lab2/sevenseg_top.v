@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module sevenseg_top(input [3:0] data,
     output reg [6:0] segments);
     
@@ -15,4 +16,10 @@ module sevenseg_top(input [3:0] data,
             9: segments = 7'b111_0011;
             default: segments = 7'b000_0000;
         endcase
+=======
+module sevenseg_top(
+);
+    
+
+>>>>>>> 0903dde (review 3 labs)
 endmodule

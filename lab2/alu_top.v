@@ -1,4 +1,5 @@
 module alu_top (
+<<<<<<< HEAD
     input [31:0] a_i,
     input [31:0] b_i,
     input [4:0] op_i,
@@ -32,5 +33,10 @@ always @(*) begin
         end
     endcase
 end
+=======
+);
+
+
+>>>>>>> 0903dde (review 3 labs)
 
 endmodule
