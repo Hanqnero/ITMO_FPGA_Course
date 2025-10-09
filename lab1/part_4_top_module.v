@@ -23,13 +23,15 @@ module part_4_top_module (input [31:0]a, input [31:0]b, input cin, output [31:0]
         .sum(s2)
     );
 
-    reg [15:0] mult1;
-    always @(*) begin
-        case (c1)
-            1'b0: mult1 <= s1;
-            1'b1: mult1 <= s2;
-        endcase
-    end
+    // reg [15:0] mult1;
+    // always @(*) begin
+    //     case (c1)
+    //         1'b0: mult1 <= s1;
+    //         1'b1: mult1 <= s2;
+    //     endcase
+    // end
+
+    assign sum[15:0] = c1? s2:s1;
 
     assign sum[31:16] = mult1;
 

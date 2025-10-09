@@ -4,11 +4,18 @@ module full_add (
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     assign sum = a != b != cin;
     assign cout = a && b || a && cin || b && cin;
 =======
     // write code here
 >>>>>>> 0903dde (review 3 labs)
+=======
+    // assign sum = a ^ b ^ cin;
+    // assign cout = a & b | a & cin | b & cin;
+
+    assign {cout, sum} = a + b + cin;
+>>>>>>> fbf8fdd (apply teacher feedback)
 
 endmodule
 
