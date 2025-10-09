@@ -3,6 +3,7 @@ module full_add (
     output sum, cout );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     assign sum = a != b != cin;
     assign cout = a && b || a && cin || b && cin;
 =======
@@ -32,5 +33,9 @@ module nbit_add #(
     endgenerate
 
     assign cout = carry[N+1];
+=======
+    assign sum = a != b != cin;
+    assign cout = a && b || a && cin || b && cin;
+>>>>>>> c1b5d48 (lab 1 done)
 
 endmodule
