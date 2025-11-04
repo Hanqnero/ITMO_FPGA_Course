@@ -1,0 +1,114 @@
+$date
+	Tue Nov  4 19:41:40 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module shift_count_reg_tb $end
+$var wire 4 ! q [3:0] $end
+$var reg 1 " clk $end
+$var reg 1 # count_ena $end
+$var reg 1 $ data $end
+$var reg 1 % shift_ena $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 1 # count_ena $end
+$var wire 1 $ data $end
+$var wire 1 % shift_ena $end
+$var reg 4 & q [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx &
+1%
+1$
+0#
+0"
+bx !
+$end
+#5000
+bx1 !
+bx1 &
+1"
+#10000
+0"
+0$
+#15000
+bx10 !
+bx10 &
+1"
+#20000
+0"
+1$
+#25000
+bx101 !
+bx101 &
+1"
+#30000
+0"
+#35000
+b1011 !
+b1011 &
+1"
+#40000
+0"
+0%
+#45000
+1"
+#50000
+0"
+#55000
+1"
+#60000
+0"
+#65000
+1"
+#70000
+0"
+#75000
+1"
+#80000
+0"
+#85000
+1"
+#90000
+0"
+1#
+#95000
+b1010 !
+b1010 &
+1"
+#100000
+0"
+#105000
+b1001 !
+b1001 &
+1"
+#110000
+0"
+#115000
+b1000 !
+b1000 &
+1"
+#120000
+0"
+#125000
+b111 !
+b111 &
+1"
+#130000
+0"
+#135000
+b110 !
+b110 &
+1"
+#140000
+0"
