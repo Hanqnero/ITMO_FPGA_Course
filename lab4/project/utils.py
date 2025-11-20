@@ -23,6 +23,6 @@ print("\n")
 for i in range(1, 9):
     f = fs[i - 1]
     print(f"F{i}", end="\t")
-    for a, b, c in product((0, 1), repeat=3):
+    for a, b, c in product((1, 0), repeat=3):
         print(f(a, b, c), end="")
     print()
