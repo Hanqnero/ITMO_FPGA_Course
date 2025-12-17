@@ -27,13 +27,18 @@ counter #( SIZE = 27 ) base_counter(
 wire [31:0] count_bcd:
 bin2bcd #(
     W = 27
-) bin2bic_coverter (
+) bin2bcd_coverter (
     .bin(count_bin),
     .bcd(count_bcd)
 );
 
-
-
+display_595 disp (
+    .clk(Clock),
+    .bcd(bcd),
+    .SPI_SR_DI(SPI_SR_DI_N8),
+    .SPI_SR_CLK(SPI_SR_CLK_N7),
+    .SPI_SR_NSS(SPI_SR_NSS_N9)
+)
 
 
 endmodule
