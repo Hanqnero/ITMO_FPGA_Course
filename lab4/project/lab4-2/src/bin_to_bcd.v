@@ -1,4 +1,4 @@
-module bin2bcd (
+module bin_to_bcd (
     input  wire [26:0] bin,
     output reg  [31:0] bcd 
 );

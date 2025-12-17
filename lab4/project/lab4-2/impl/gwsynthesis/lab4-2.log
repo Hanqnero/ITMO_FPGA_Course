@@ -1,0 +1,43 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/bcd_to_7seg.v'
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/bin_to_bcd.v'
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/counter_bcd.v'
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/display_595.v'
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/spi_to_595.v'
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/top.v'
+Compiling module 'top'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/top.v":1)
+Compiling module 'counter_bcd'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/counter_bcd.v":1)
+Compiling module 'bin_to_bcd'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/bin_to_bcd.v":1)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/bin_to_bcd.v":20)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/bin_to_bcd.v":19)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/bin_to_bcd.v":18)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/bin_to_bcd.v":17)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/bin_to_bcd.v":16)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/bin_to_bcd.v":15)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/bin_to_bcd.v":14)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/bin_to_bcd.v":13)
+Compiling module 'display_595'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/display_595.v":1)
+Compiling module 'bcd_to_7seg'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/bcd_to_7seg.v":1)
+Compiling module 'spi_to_595'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/spi_to_595.v":1)
+NOTE  (EX0101) : Current top module is "top"
+WARN  (EX0211) : The output port "LED1" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/src/top.v":8)
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/impl/gwsynthesis/lab4-2.vg" completed
+[100%] Generate report file "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab4/project/lab4-2/impl/gwsynthesis/lab4-2_syn.rpt.html" completed
+GowinSynthesis finish
