@@ -13,22 +13,22 @@ localparam CLOCK_SPEED = 25'd26_999_999;
 // 27 bits are to hold 9999 9999
 
 
-//wire [26:0] count_bin;
-//counter #( .SIZE(27) ) base_counter(
-//    .clk(Clock),
-//    .reset(0),
-//    .stop(27'd99999999),
-//    .count(count_bin)
-//);
+wire [26:0] count_bin;
+counter base_counter(
+    .clk(Clock),
+    .count(count_bin)
+);
 
 // bcd size is calculated as: n + 4*ceil(n//3)
 // 32 bits are enough to hold the bcd
 
 wire [31:0] count_bcd;
 bin2bcd bin2bcd_converter (
-    .bin(27'h000005),
+    .bin(count_bin),
     .bcd(count_bcd)
 );
+
+//reg [31:0] number = 32'h12345678;
 
 display_595 disp (
     .clk(Clock),

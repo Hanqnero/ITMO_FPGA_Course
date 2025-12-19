@@ -1,6 +1,4 @@
 module lab4_task1(
-    input  Clock,
-
     input ButtonS0,
     input ButtonS1,
     input ButtonS2,
@@ -10,7 +8,9 @@ module lab4_task1(
     output LED2,
     output LED3,
     output LED4,
-    output LED5
+    output LED5,
+    output LED6,
+    output LED7
 
 );
 
@@ -71,7 +71,7 @@ localparam F8_tt = 8'b10101010;
 
 
 
-LUT3 #(.INIT(~F1_tt)) f1 (
+LUT3 #(.INIT(F1_tt)) f1 (
     .I0(ButtonS2_on),
     .I1(ButtonS1_on),
     .I2(ButtonS0_on),
@@ -79,7 +79,7 @@ LUT3 #(.INIT(~F1_tt)) f1 (
 );
 
 
-LUT3 #(.INIT(~F2_tt)) f2(
+LUT3 #(.INIT(F2_tt)) f2(
     .I0(ButtonS2_on),
     .I1(ButtonS1_on),
     .I2(ButtonS0_on),
@@ -87,7 +87,7 @@ LUT3 #(.INIT(~F2_tt)) f2(
 );
 
 
-LUT3 #(.INIT(~F3_tt)) f3(
+LUT3 #(.INIT(F3_tt)) f3(
     .I0(ButtonS2_on),
     .I1(ButtonS1_on),
     .I2(ButtonS0_on),
@@ -95,7 +95,7 @@ LUT3 #(.INIT(~F3_tt)) f3(
 );
 
 
-LUT3 #(.INIT(~F4_tt)) f4(
+LUT3 #(.INIT(F4_tt)) f4(
     .I0(ButtonS2_on),
     .I1(ButtonS1_on),
     .I2(ButtonS0_on),
@@ -103,7 +103,7 @@ LUT3 #(.INIT(~F4_tt)) f4(
 );
 
 
-LUT3 #(.INIT(~F5_tt)) f5(
+LUT3 #(.INIT(F5_tt)) f5(
     .I0(ButtonS2_on),
     .I1(ButtonS1_on),
     .I2(ButtonS0_on),
@@ -111,11 +111,25 @@ LUT3 #(.INIT(~F5_tt)) f5(
 );
 
 
-LUT3 #(.INIT(~F6_tt)) f6(
+LUT3 #(.INIT(F6_tt)) f6(
     .I0(ButtonS2_on),
     .I1(ButtonS1_on),
     .I2(ButtonS0_on),
     .F(LED5)
+);
+
+LUT3 #(.INIT(F7_tt)) f7(
+    .I0(ButtonS2_on),
+    .I1(ButtonS1_on),
+    .I2(ButtonS0_on),
+    .F(LED6)
+);
+
+LUT3 #(.INIT(F8_tt)) f8(
+    .I0(ButtonS2_on),
+    .I1(ButtonS1_on),
+    .I2(ButtonS0_on),
+    .F(LED7)
 );
 
 endmodule

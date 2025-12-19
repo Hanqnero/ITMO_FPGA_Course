@@ -1,6 +1,7 @@
 module display_595 (
     input  wire        clk,
     input  wire [31:0] bcd,
+
     output wire        SPI_SR_DI,
     output wire        SPI_SR_CLK,
     output wire        SPI_SR_NSS
@@ -30,19 +31,19 @@ module display_595 (
     reg [7:0] digs_decoded;
     always @* begin
         case (digit_select)
-            3'd0: digs_decoded = 8'b11111110;
-            3'd1: digs_decoded = 8'b11111101;
-            3'd2: digs_decoded = 8'b11111011;
-            3'd3: digs_decoded = 8'b11110111;
-            3'd4: digs_decoded = 8'b11101111;
-            3'd5: digs_decoded = 8'b11011111;
-            3'd6: digs_decoded = 8'b10111111;
-            3'd7: digs_decoded = 8'b01111111;
+            3'd0: digs_decoded = ~8'b11111110;
+            3'd1: digs_decoded = ~8'b11111101;
+            3'd2: digs_decoded = ~8'b11111011;
+            3'd3: digs_decoded = ~8'b11110111;
+            3'd4: digs_decoded = ~8'b11101111;
+            3'd5: digs_decoded = ~8'b11011111;
+            3'd6: digs_decoded = ~8'b10111111;
+            3'd7: digs_decoded = ~8'b01111111;
         endcase
     end
 
-    reg [9:0] refresh_cnt = 10'd0;
-    wire      refresh_tick = (refresh_cnt == 10'd0);
+    reg [15:0] refresh_cnt = 16'd0;
+    wire      refresh_tick = (refresh_cnt == 16'd0);
 
     always @(posedge clk) begin
         refresh_cnt <= refresh_cnt + 1'b1;

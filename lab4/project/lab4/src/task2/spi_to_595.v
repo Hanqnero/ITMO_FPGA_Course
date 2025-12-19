@@ -19,7 +19,7 @@ module spi_to_595 (
 
     reg [1:0] state = S_IDLE;
 
-    always @(posedge clk) begin
+    always @(negedge clk) begin
         case (state)
             S_IDLE: begin
                 SPI_SR_CLK <= 1'b0;

@@ -5,13 +5,14 @@
     <Version>5</Version>
     <Device name="GW2A-18C" pn="GW2A-LV18PG256C8/I7">gw2a18c-011</Device>
     <FileList>
-        <File path="src/bcd_to_7seg.v" type="file.verilog" enable="1"/>
-        <File path="src/lab4_task1.v" type="file.verilog" enable="1"/>
+        <File path="src/lab4_top.v" type="file.verilog" enable="1"/>
+        <File path="src/task1/lab4_task1.v" type="file.verilog" enable="1"/>
+        <File path="src/task2/bcd_to_7seg.v" type="file.verilog" enable="1"/>
         <File path="src/task2/bin2bcd.v" type="file.verilog" enable="1"/>
         <File path="src/task2/counter.v" type="file.verilog" enable="1"/>
         <File path="src/task2/display_595.v" type="file.verilog" enable="1"/>
+        <File path="src/task2/lab4_task2.v" type="file.verilog" enable="1"/>
         <File path="src/task2/spi_to_595.v" type="file.verilog" enable="1"/>
-        <File path="src/task2/top.v" type="file.verilog" enable="1"/>
         <File path="src/lab4.cst" type="file.cst" enable="1"/>
         <File path="src/lab4.sdc" type="file.sdc" enable="1"/>
     </FileList>
