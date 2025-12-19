@@ -1,0 +1,20 @@
+**** module/scope: uart_rx_fsm
+     Flip-Flops   : 24
+     Logic Gates  : 171
+     ADDER[4]: 1 units
+     EQUALITY[32]: 1 units
+     MAGNITUDE[32]: 1 units
+     MUX[2]: 12 slices
+     LPM[5]: 12 unaccounted
+     LOG[13]: 5 unaccounted
+     LOG[14]: 1 unaccounted
+**** TOTALS
+     Flip-Flops   : 24
+     Logic Gates  : 171
+     ADDER[4]: 1 units
+     EQUALITY[32]: 1 units
+     MAGNITUDE[32]: 1 units
+     MUX[2]: 12 slices
+     LPM[5]: 12 unaccounted
+     LOG[13]: 5 unaccounted
+     LOG[14]: 1 unaccounted
