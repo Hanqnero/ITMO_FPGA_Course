@@ -1,0 +1,57 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bcd_to_7seg.v'
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v'
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/display_595.v'
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/lab4_task2.v'
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/spi_to_595.v'
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/top_uart.v'
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_rx.v'
+Analyzing Verilog file '/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_tx_fsm.v'
+Compiling module 'top'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/top_uart.v":1)
+Compiling module 'uart_rx'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_rx.v":1)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 12("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_rx.v":44)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_rx.v":56)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 12("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_rx.v":59)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 12("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_rx.v":68)
+Compiling module 'uart_tx'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_tx_fsm.v":1)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_tx_fsm.v":46)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 12("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_tx_fsm.v":49)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 12("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_tx_fsm.v":59)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 12("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_tx_fsm.v":68)
+Compiling module 'bin2bcd'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v":1)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v":27)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v":26)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v":25)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v":24)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v":23)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v":22)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v":21)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v":20)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v":19)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v":18)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/top_uart.v":142)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/top_uart.v":161)
+Compiling module 'display_595'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/display_595.v":1)
+Compiling module 'bcd_to_7seg'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bcd_to_7seg.v":1)
+Compiling module 'spi_to_595'("/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/spi_to_595.v":1)
+NOTE  (EX0101) : Current top module is "top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/impl/gwsynthesis/lab5.vg" completed
+[100%] Generate report file "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/impl/gwsynthesis/lab5_syn.rpt.html" completed
+GowinSynthesis finish

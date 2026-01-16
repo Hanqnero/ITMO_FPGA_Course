@@ -1,0 +1,62 @@
+[
+ {
+  "InstFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/top_uart.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/top_uart.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/top_uart.v",
+    "InstLine" : 23,
+    "InstName" : "u_rx",
+    "ModuleFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_rx.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "uart_rx"
+   },
+   {
+    "InstFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/top_uart.v",
+    "InstLine" : 30,
+    "InstName" : "u_tx",
+    "ModuleFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_tx_fsm.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "uart_tx"
+   },
+   {
+    "InstFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/top_uart.v",
+    "InstLine" : 54,
+    "InstName" : "b2b_inst",
+    "ModuleFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "bin2bcd"
+   },
+   {
+    "InstFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/top_uart.v",
+    "InstLine" : 169,
+    "InstName" : "disp",
+    "ModuleFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/display_595.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "display_595",
+    "SubInsts" : [
+     {
+      "InstFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/display_595.v",
+      "InstLine" : 27,
+      "InstName" : "segdec",
+      "ModuleFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bcd_to_7seg.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "bcd_to_7seg"
+     },
+     {
+      "InstFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/display_595.v",
+      "InstLine" : 57,
+      "InstName" : "shifter",
+      "ModuleFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/spi_to_595.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "spi_to_595"
+     }
+    ]
+   }
+  ]
+ }
+]

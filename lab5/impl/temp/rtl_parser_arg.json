@@ -1,0 +1,45 @@
+{
+ "Device" : "GW2A-18C",
+ "Files" : [
+  {
+   "Path" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bcd_to_7seg.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/bin2bcd.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/display_595.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/lab4_task2.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/spi_to_595.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/top_uart.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_rx.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/src/uart_tx_fsm.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "/Users/hanqnero/Documents/uni/Semester 5/Programming_fpga/lab5/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

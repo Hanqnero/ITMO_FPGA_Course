@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="top" Register="109" Alu="92" Lut="125" T_Register="227(109)" T_Alu="107(92)" T_Lut="850(125)">
+ <SubModule name="u_rx" Register="28" Lut="43" T_Register="28(28)" T_Lut="43(43)"/>
+ <SubModule name="u_tx" Register="27" Lut="37" T_Register="27(27)" T_Lut="37(37)"/>
+ <SubModule name="b2b_inst" Lut="563" T_Lut="563(563)"/>
+ <SubModule name="disp" Register="36" Alu="15" Lut="46" T_Register="63(36)" T_Alu="15(15)" T_Lut="82(46)">
+  <SubModule name="segdec" Lut="7" T_Lut="7(7)"/>
+  <SubModule name="shifter" Register="27" Lut="29" T_Register="27(27)" T_Lut="29(29)"/>
+ </SubModule>
+</Module>
