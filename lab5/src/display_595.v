@@ -10,7 +10,6 @@ module display_595 (
 
     reg [3:0] cur_bcd;
     always @* begin
-        // Flip display order: digit_select 0 now shows the lowest nibble
         case (digit_select)
             3'd0: cur_bcd = bcd[3:0];
             3'd1: cur_bcd = bcd[7:4];
